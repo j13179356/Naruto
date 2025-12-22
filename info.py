@@ -52,8 +52,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 SECONDDB_URI = environ.get('SECONDDB_URI', "")
 DATABASE_URI = environ.get('DATABASE_URI', "")
-#SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://nitish:nitish@cluster0.nhnx7rk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-#DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bot:bot@cluster0.avpomiq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+#SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+s
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Mhakalx')
 
@@ -164,5 +163,6 @@ LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_I
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+
 
 
