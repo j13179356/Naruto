@@ -19,7 +19,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Showtime File Bot')
 API_ID = int(environ.get('API_ID', '29593343'))
 API_HASH = environ.get('API_HASH', '9e93c3305814f31695145026944fe9e1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6039925634:AAFi29JrZxmZiiz1DK_M546Q4_CNeaaYvls")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -164,4 +164,5 @@ LOG_STR += ("Long IMDB storyline enabled." if LONG_IMDB_DESCRIPTION else "LONG_I
 LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies if movie not found\n" if SPELL_CHECK_REPLY else "SPELL_CHECK_REPLY Mode disabled\n")
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
+
 
