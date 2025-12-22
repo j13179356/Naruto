@@ -19,7 +19,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Showtime File Bot')
 API_ID = int(environ.get('API_ID', '29593343'))
 API_HASH = environ.get('API_HASH', '9e93c3305814f31695145026944fe9e1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6039925634:AAFi29JrZxmZiiz1DK_M546Q4_CNeaaYvls")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
